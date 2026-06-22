@@ -2,306 +2,2059 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>For My Sister ❤️</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Vidhan Sharma — Student Innovator, Inventor, Entrepreneur, Technology Builder & Photographer. IIT Jammu Incubatee. Pragyaan STEAM Hackathon Winner.">
+<meta name="keywords" content="Vidhan Sharma, inventor, innovator, entrepreneur, IoT, Arduino, Zap Shoe, Cliff Guard Car, IIT Jammu, Jammu Kashmir">
+<meta name="author" content="Vidhan Sharma">
+<meta property="og:title" content="Vidhan Sharma — Inventor & Technology Builder">
+<meta property="og:description" content="Student Innovator, Inventor, Entrepreneur & Photographer. Building technology that solves real-world problems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vidhansharma.in">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vidhan Sharma — Inventor & Technology Builder">
+<meta name="twitter:site" content="@EditswithVidhan">
+<title>Vidhan Sharma — Inventor & Technology Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Vidhan Sharma",
+  "jobTitle": "Student Innovator & Inventor",
+  "url": "https://vidhansharma.in",
+  "sameAs": [
+    "https://x.com/EditswithVidhan",
+    "https://www.linkedin.com/in/vidhan-sharma-a676b0336/",
+    "https://www.instagram.com/thatguyvibe/",
+    "https://www.youtube.com/@Vidhansharma1404"
+  ]
+}
+</script>
 <style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
+  :root {
+    --bg: #050505;
+    --bg2: #0E0E0E;
+    --card: #151515;
+    --card2: #1a1a1a;
+    --border: rgba(255,255,255,0.06);
+    --border2: rgba(255,255,255,0.1);
+    --blue: #3B82F6;
+    --blue-bright: #60A5FA;
+    --blue-glow: rgba(59,130,246,0.15);
+    --blue-glow2: rgba(59,130,246,0.3);
+    --purple: #8B5CF6;
+    --purple-glow: rgba(139,92,246,0.15);
+    --text: #FFFFFF;
+    --text2: #A1A1AA;
+    --text3: #71717A;
+    --gradient-blue: linear-gradient(135deg, #3B82F6, #8B5CF6);
+    --gradient-text: linear-gradient(135deg, #60A5FA, #A78BFA);
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
     overflow-x: hidden;
-}
+  }
+  ::selection { background: var(--blue); color: #fff; }
 
-.container {
-    max-width: 700px;
-    padding: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    position: relative;
-}
+  /* SCROLLBAR */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
 
-/* main image */
-.slide-img {
-    width: 100%;
-    max-width: 380px;
-    border-radius: 18px;
-    margin-bottom: 25px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-}
-
-h1 {
-    font-size: 40px;
-    line-height: 1.3;
-}
-
-/* envelope */
-.envelope {
-    font-size: 80px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.envelope:hover {
-    transform: scale(1.2);
-}
-
-/* slide 2 */
-#slide2 {
-    display: none;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.8;
-    opacity: 0;
-    position: relative;
-}
-
-/* POLAROID STYLE */
-.polaroid {
-    position: absolute;
-    background: white;
-    padding: 10px 10px 25px 10px;
-    border-radius: 6px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    cursor: pointer;
-    transition: 0.4s;
-    animation: floatAnim 4s ease-in-out infinite;
-}
-
-.polaroid img {
-    width: 130px;
-    border-radius: 4px;
-}
-
-/* positions */
-.mem1 { top: 80px; left: -160px; transform: rotate(-12deg); }
-.mem2 { top: 80px; right: -160px; transform: rotate(12deg); }
-.mem3 { top: 350px; left: -160px; transform: rotate(8deg); }
-.mem4 { top: 350px; right: -160px; transform: rotate(-8deg); }
-
-/* floating animation */
-@keyframes floatAnim {
-    0%,100% { transform: translateY(0px) rotate(var(--rot)); }
-    50% { transform: translateY(-12px) rotate(var(--rot)); }
-}
-
-/* zoom overlay */
-#zoomOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s;
-    z-index: 999;
-}
-
-#zoomOverlay img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-    box-shadow: 0 0 40px rgba(255,255,255,0.3);
-}
-
-#zoomOverlay.show {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* final line */
-.final-line {
-    font-size: 26px;
+  /* LOADER */
+  #loader {
+    position: fixed; inset: 0; background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999; transition: opacity 0.6s, visibility 0.6s;
+  }
+  #loader.hidden { opacity: 0; visibility: hidden; }
+  .loader-inner {
     text-align: center;
-    margin-top: 30px;
+  }
+  .loader-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+  }
+  .loader-bar {
+    width: 200px; height: 2px;
+    background: var(--border2);
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  .loader-progress {
+    height: 100%;
+    background: var(--gradient-blue);
+    border-radius: 2px;
+    animation: loadProgress 1.8s ease forwards;
+  }
+  @keyframes loadProgress { from { width: 0 } to { width: 100% } }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    height: 64px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(5,5,5,0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    transition: all 0.3s;
+  }
+  nav.scrolled { background: rgba(5,5,5,0.95); }
+  .nav-logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+  .nav-links {
+    display: flex; align-items: center; gap: 0.25rem;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--text2);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    transition: all 0.2s;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .nav-links a:hover, .nav-links a.active {
+    color: var(--text);
+    background: var(--blue-glow);
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column; gap: 5px;
+    cursor: pointer; padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 2px;
+    background: var(--text2); border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .mobile-menu {
+    display: none;
+    position: fixed; top: 64px; left: 0; right: 0;
+    background: rgba(5,5,5,0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem;
+    z-index: 999;
+    transform: translateY(-10px);
     opacity: 0;
-    transition: 3s;
-}
+    transition: all 0.3s;
+  }
+  .mobile-menu.open { transform: translateY(0); opacity: 1; }
+  .mobile-menu a {
+    display: block; color: var(--text2);
+    text-decoration: none; padding: 0.75rem 1rem;
+    font-size: 0.85rem; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    border-radius: 8px; transition: all 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--text); background: var(--blue-glow); }
 
-/* hearts */
-.heart {
-    position: fixed;
-    bottom: -10px;
-    animation: floatUp 5s linear infinite;
-}
+  /* SECTIONS */
+  section { min-height: 100vh; padding: 6rem 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.7rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.15em;
+    color: var(--blue);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-label::before {
+    content: ''; display: block;
+    width: 24px; height: 1px; background: var(--blue);
+  }
+  h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+  h2.section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700; line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  p.section-desc {
+    color: var(--text2); font-size: 1rem;
+    max-width: 560px; line-height: 1.7;
+    margin-bottom: 3rem;
+  }
 
-@keyframes floatUp {
-    0% { transform: translateY(0); opacity:1; }
-    100% { transform: translateY(-100vh); opacity:0; }
-}
+  /* HERO */
+  #home {
+    display: flex; align-items: center;
+    min-height: 100vh; padding-top: 64px;
+    position: relative; overflow: hidden;
+  }
+  #particles-canvas {
+    position: absolute; inset: 0;
+    pointer-events: none; z-index: 0;
+  }
+  .hero-glow-1 {
+    position: absolute; width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(59,130,246,0.08) 0%, transparent 70%);
+    top: -100px; left: -100px; pointer-events: none;
+    animation: floatGlow 8s ease-in-out infinite;
+  }
+  .hero-glow-2 {
+    position: absolute; width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(139,92,246,0.07) 0%, transparent 70%);
+    bottom: -50px; right: -50px; pointer-events: none;
+    animation: floatGlow 10s ease-in-out infinite reverse;
+  }
+  @keyframes floatGlow {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(30px, -30px); }
+  }
+  .hero-content {
+    position: relative; z-index: 1;
+    max-width: 1100px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr auto;
+    gap: 4rem; align-items: center;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(59,130,246,0.1);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 100px;
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem; font-weight: 500;
+    color: var(--blue-bright);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+  }
+  .hero-badge span.dot {
+    width: 6px; height: 6px;
+    background: var(--blue-bright);
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+  }
+  .hero-name {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-weight: 800; line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.75rem;
+  }
+  .hero-rotating {
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-weight: 500;
+    color: var(--text2);
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .hero-rotating-inner { animation: rotateWords 10s linear infinite; }
+  .hero-rotating-inner span { display: block; height: 2rem; line-height: 2rem; }
+  @keyframes rotateWords {
+    0% { transform: translateY(0); }
+    18% { transform: translateY(0); }
+    20% { transform: translateY(-2rem); }
+    38% { transform: translateY(-2rem); }
+    40% { transform: translateY(-4rem); }
+    58% { transform: translateY(-4rem); }
+    60% { transform: translateY(-6rem); }
+    78% { transform: translateY(-6rem); }
+    80% { transform: translateY(-8rem); }
+    98% { transform: translateY(-8rem); }
+    100% { transform: translateY(0); }
+  }
+  .hero-desc {
+    color: var(--text2); font-size: 1rem;
+    max-width: 500px; line-height: 1.8;
+    margin-bottom: 2.5rem;
+  }
+  .btn-group { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-size: 0.85rem; font-weight: 600;
+    text-decoration: none;
+    cursor: pointer; border: none;
+    transition: all 0.25s; letter-spacing: 0.02em;
+  }
+  .btn-primary {
+    background: var(--gradient-blue);
+    color: #fff;
+  }
+  .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text2);
+    border: 1px solid var(--border2);
+  }
+  .btn-ghost:hover { color: var(--text); border-color: var(--blue); background: var(--blue-glow); }
+  .hero-portrait {
+    width: 260px; height: 320px;
+    background: var(--card);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    position: relative; overflow: hidden;
+    flex-shrink: 0;
+  }
+  .hero-portrait::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(59,130,246,0.05), rgba(139,92,246,0.05));
+  }
+  .portrait-placeholder {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 0.75rem;
+  }
+  .portrait-icon {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: var(--blue-glow);
+    border: 2px solid rgba(59,130,246,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+  }
+  .portrait-placeholder p { color: var(--text3); font-size: 0.75rem; }
+  .hero-portrait-ring {
+    position: absolute; inset: -1px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(59,130,246,0.3), rgba(139,92,246,0.3));
+    z-index: -1;
+  }
+  .scroll-indicator {
+    position: absolute; bottom: 2rem;
+    left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column;
+    align-items: center; gap: 0.5rem;
+    color: var(--text3); font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    animation: bounce 2s ease-in-out infinite;
+    z-index: 1;
+  }
+  .scroll-indicator .arrow {
+    width: 1px; height: 40px;
+    background: linear-gradient(to bottom, var(--text3), transparent);
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
 
+  /* STATS */
+  .stats-section {
+    padding: 4rem 2rem;
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .stats-grid {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .stat-item { text-align: center; }
+  .stat-number {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem; font-weight: 800;
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .stat-label {
+    color: var(--text3); font-size: 0.75rem;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    margin-top: 0.5rem;
+  }
+
+  /* FEATURED */
+  .featured-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1.5rem; margin-bottom: 4rem;
+  }
+  .featured-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative; overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .featured-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-3px);
+  }
+  .featured-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: var(--gradient-blue);
+    opacity: 0; transition: opacity 0.3s;
+  }
+  .featured-card:hover::before { opacity: 1; }
+  .card-tag {
+    display: inline-block;
+    background: var(--blue-glow);
+    color: var(--blue-bright);
+    font-size: 0.65rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    border: 1px solid rgba(59,130,246,0.2);
+    margin-bottom: 1rem;
+  }
+  .card-tag.purple {
+    background: var(--purple-glow);
+    color: #A78BFA;
+    border-color: rgba(139,92,246,0.2);
+  }
+  .featured-card h3 {
+    font-size: 1.4rem; font-weight: 700;
+    margin-bottom: 0.75rem; line-height: 1.2;
+  }
+  .featured-card p { color: var(--text2); font-size: 0.9rem; line-height: 1.7; }
+  .card-image-ph {
+    width: 100%; height: 160px;
+    background: var(--card2);
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2rem;
+    border: 1px solid var(--border);
+  }
+
+  /* UPDATES */
+  .updates-section { margin-top: 4rem; }
+  .update-item {
+    display: flex; gap: 1.5rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+  .update-dot {
+    width: 8px; height: 8px;
+    background: var(--blue);
+    border-radius: 50%;
+    margin-top: 0.4rem; flex-shrink: 0;
+  }
+  .update-content h4 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .update-content p { color: var(--text2); font-size: 0.8rem; }
+
+  /* ABOUT */
+  #about { background: var(--bg); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: start;
+  }
+  .about-story p {
+    color: var(--text2); font-size: 0.95rem;
+    line-height: 1.8; margin-bottom: 1.25rem;
+  }
+  .about-story p strong { color: var(--text); }
+  .values-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .value-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: border-color 0.3s;
+  }
+  .value-card:hover { border-color: rgba(59,130,246,0.3); }
+  .value-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+  .value-card h4 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .value-card p { color: var(--text3); font-size: 0.78rem; line-height: 1.5; }
+
+  /* SKILLS */
+  .skills-wrapper { margin-top: 4rem; }
+  .skills-grid {
+    display: flex; flex-wrap: wrap; gap: 0.75rem;
+  }
+  .skill-pill {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text2);
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    font-size: 0.8rem; font-weight: 500;
+    transition: all 0.2s;
+  }
+  .skill-pill:hover {
+    border-color: var(--blue);
+    color: var(--text);
+    background: var(--blue-glow);
+  }
+  .tech-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 1rem; margin-top: 2rem;
+  }
+  .tech-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.25rem;
+    text-align: center;
+    transition: all 0.3s;
+  }
+  .tech-card:hover {
+    border-color: rgba(59,130,246,0.3);
+    transform: translateY(-2px);
+  }
+  .tech-icon { font-size: 1.75rem; margin-bottom: 0.5rem; }
+  .tech-card p { font-size: 0.75rem; color: var(--text3); }
+
+  /* PROJECTS */
+  #projects { background: var(--bg2); }
+  .project-filters {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .filter-btn {
+    background: transparent;
+    color: var(--text3);
+    border: 1px solid var(--border);
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    font-size: 0.75rem; font-weight: 500;
+    cursor: pointer; transition: all 0.2s;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.05em;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    color: var(--text);
+    border-color: var(--blue);
+    background: var(--blue-glow);
+  }
+  .projects-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .project-card:hover {
+    border-color: rgba(59,130,246,0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .project-card.featured {
+    grid-column: span 2;
+  }
+  .project-img {
+    width: 100%; height: 160px;
+    background: var(--card2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 2.5rem; border-bottom: 1px solid var(--border);
+    position: relative; overflow: hidden;
+  }
+  .project-card.featured .project-img { height: 200px; }
+  .project-body { padding: 1.25rem; }
+  .project-body h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .project-body p { color: var(--text2); font-size: 0.8rem; line-height: 1.6; margin-bottom: 1rem; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .project-tag {
+    background: var(--bg); color: var(--text3);
+    font-size: 0.65rem; padding: 0.2rem 0.6rem;
+    border-radius: 100px; border: 1px solid var(--border);
+  }
+  .status-badge {
+    display: inline-flex; align-items: center; gap: 0.3rem;
+    font-size: 0.65rem; font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+  }
+  .status-badge.built { background: rgba(34,197,94,0.1); color: #4ade80; border: 1px solid rgba(34,197,94,0.2); }
+  .status-badge.concept { background: rgba(234,179,8,0.1); color: #facc15; border: 1px solid rgba(234,179,8,0.2); }
+  .status-badge.experimental { background: rgba(139,92,246,0.1); color: #a78bfa; border: 1px solid rgba(139,92,246,0.2); }
+  .project-meta {
+    display: flex; justify-content: space-between;
+    align-items: center; margin-bottom: 0.75rem;
+  }
+
+  /* ACHIEVEMENTS */
+  #achievements { background: var(--bg); }
+  .timeline { position: relative; padding-left: 2rem; }
+  .timeline::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 1px; background: var(--border);
+  }
+  .timeline-item {
+    position: relative; margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+  }
+  .timeline-dot {
+    position: absolute; left: -2rem; top: 0.35rem;
+    width: 10px; height: 10px;
+    background: var(--blue); border-radius: 50%;
+    border: 2px solid var(--bg);
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+    transform: translateX(50%);
+  }
+  .achievement-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+  }
+  .achievement-card:hover {
+    border-color: rgba(59,130,246,0.3);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  }
+  .ach-header {
+    display: flex; align-items: flex-start;
+    justify-content: space-between; gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .ach-trophy { font-size: 1.5rem; }
+  .ach-badge {
+    background: rgba(59,130,246,0.1);
+    color: var(--blue-bright);
+    font-size: 0.65rem; font-weight: 600;
+    padding: 0.25rem 0.6rem;
+    border-radius: 100px;
+    border: 1px solid rgba(59,130,246,0.2);
+    white-space: nowrap;
+  }
+  .ach-badge.gold { background: rgba(234,179,8,0.1); color: #facc15; border-color: rgba(234,179,8,0.2); }
+  .ach-badge.national { background: rgba(139,92,246,0.1); color: #a78bfa; border-color: rgba(139,92,246,0.2); }
+  .achievement-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .achievement-card p { color: var(--text2); font-size: 0.85rem; line-height: 1.7; }
+  .ach-prize {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    background: rgba(234,179,8,0.1);
+    color: #facc15;
+    border: 1px solid rgba(234,179,8,0.2);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem; font-weight: 700;
+    margin-top: 0.75rem;
+  }
+
+  /* INSTITUTIONS */
+  .institutions-section { margin-top: 4rem; }
+  .inst-grid {
+    display: flex; flex-wrap: wrap; gap: 1rem;
+    margin-top: 2rem;
+  }
+  .inst-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    font-size: 0.85rem; font-weight: 600;
+    color: var(--text2);
+    transition: all 0.2s;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .inst-card:hover { color: var(--text); border-color: var(--blue); }
+
+  /* PHOTOGRAPHY */
+  #photography { background: var(--bg2); }
+  .photo-cats {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .masonry-grid {
+    columns: 3; gap: 1rem;
+    column-gap: 1rem;
+  }
+  .photo-item {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: all 0.3s;
+    position: relative;
+  }
+  .photo-item:hover { border-color: rgba(59,130,246,0.3); transform: scale(1.01); }
+  .photo-ph {
+    background: var(--card);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 0.5rem;
+    color: var(--text3); font-size: 0.75rem;
+  }
+  .photo-ph .ph-icon { font-size: 1.75rem; }
+  .photo-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    opacity: 0; transition: opacity 0.3s;
+    display: flex; align-items: flex-end;
+    padding: 1rem;
+  }
+  .photo-item:hover .photo-overlay { opacity: 1; }
+  .photo-overlay span { color: #fff; font-size: 0.8rem; font-weight: 500; }
+
+  /* TESTIMONIALS */
+  .testimonials-section { margin-top: 4rem; }
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .testimonial-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: border-color 0.3s;
+  }
+  .testimonial-card:hover { border-color: rgba(139,92,246,0.3); }
+  .testimonial-quote {
+    font-size: 0.9rem; color: var(--text2);
+    line-height: 1.7; margin-bottom: 1.25rem;
+    font-style: italic;
+  }
+  .testimonial-author {
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .author-avatar {
+    width: 36px; height: 36px;
+    background: var(--blue-glow);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem; border: 1px solid rgba(59,130,246,0.2);
+  }
+  .author-info h4 { font-size: 0.8rem; font-weight: 600; }
+  .author-info p { color: var(--text3); font-size: 0.72rem; }
+
+  /* MEDIA */
+  .media-section { margin-top: 4rem; }
+  .media-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .media-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: all 0.3s;
+  }
+  .media-card:hover { border-color: var(--blue); transform: translateY(-2px); }
+  .media-card h3 { font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; }
+  .media-card p { color: var(--text3); font-size: 0.8rem; line-height: 1.6; }
+  .media-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+
+  /* SOCIAL */
+  .social-section { margin-top: 4rem; }
+  .social-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .social-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: block;
+  }
+  .social-card:hover { transform: translateY(-3px); }
+  .social-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .social-name { color: var(--text); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.25rem; }
+  .social-handle { color: var(--text3); font-size: 0.75rem; }
+  .social-metric {
+    margin-top: 1rem; padding-top: 0.75rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.7rem; color: var(--text3);
+  }
+
+  /* CONTACT */
+  #contact { background: var(--bg); }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+  .contact-form {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+  .form-group label { font-size: 0.75rem; font-weight: 500; color: var(--text2); }
+  .form-group input, .form-group textarea, .form-group select {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    transition: border-color 0.2s;
+    outline: none;
+  }
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: var(--blue);
+  }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+  .contact-item {
+    display: flex; align-items: flex-start; gap: 1rem;
+  }
+  .ci-icon {
+    width: 40px; height: 40px;
+    background: var(--blue-glow);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; flex-shrink: 0;
+  }
+  .ci-text h4 { font-size: 0.8rem; font-weight: 600; margin-bottom: 0.2rem; }
+  .ci-text p { color: var(--text2); font-size: 0.85rem; }
+
+  /* FUTURE */
+  .future-section {
+    background: var(--bg2);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 5rem 2rem;
+  }
+  .future-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem; margin-top: 3rem;
+  }
+  .future-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.5rem;
+    transition: all 0.3s;
+    position: relative; overflow: hidden;
+  }
+  .future-card::after {
+    content: '';
+    position: absolute; bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gradient-blue);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: left;
+  }
+  .future-card:hover::after { transform: scaleX(1); }
+  .future-card:hover { border-color: rgba(59,130,246,0.2); }
+  .future-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .future-card p { color: var(--text3); font-size: 0.8rem; line-height: 1.6; }
+  .future-icon { font-size: 1.75rem; margin-bottom: 1rem; }
+  .coming-soon {
+    display: inline-block;
+    background: rgba(234,179,8,0.1);
+    color: #facc15;
+    font-size: 0.65rem; font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 100px;
+    margin-top: 0.75rem;
+    border: 1px solid rgba(234,179,8,0.2);
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 3rem 2rem;
+  }
+  .footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .footer-brand p {
+    color: var(--text3); font-size: 0.82rem;
+    line-height: 1.7; margin: 0.75rem 0;
+    max-width: 280px;
+  }
+  .footer-quote {
+    font-style: italic;
+    color: var(--text2) !important;
+    border-left: 2px solid var(--blue);
+    padding-left: 0.75rem;
+    margin-top: 1rem !important;
+  }
+  .footer-col h4 {
+    font-size: 0.75rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--text2); margin-bottom: 1rem;
+  }
+  .footer-col a {
+    display: block; color: var(--text3);
+    text-decoration: none; font-size: 0.82rem;
+    margin-bottom: 0.5rem; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--text); }
+  .footer-bottom {
+    max-width: 1100px; margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex; justify-content: space-between;
+    align-items: center;
+    color: var(--text3); font-size: 0.75rem;
+  }
+  .footer-socials { display: flex; gap: 0.75rem; }
+  .footer-socials a {
+    width: 32px; height: 32px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem; text-decoration: none;
+    transition: all 0.2s;
+  }
+  .footer-socials a:hover { border-color: var(--blue); background: var(--blue-glow); }
+
+  /* BACK TO TOP */
+  #back-to-top {
+    position: fixed; bottom: 1.5rem; right: 1.5rem;
+    width: 40px; height: 40px;
+    background: var(--blue);
+    color: #fff; border: none; border-radius: 10px;
+    cursor: pointer; font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; pointer-events: none;
+    transition: all 0.3s; z-index: 500;
+  }
+  #back-to-top.visible { opacity: 1; pointer-events: all; }
+  #back-to-top:hover { transform: translateY(-2px); background: var(--purple); }
+
+  /* REVEAL ANIMATIONS */
+  .reveal {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero-content { grid-template-columns: 1fr; }
+    .hero-portrait { display: none; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-grid { grid-template-columns: 1fr; }
+    .about-grid { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr 1fr; }
+    .project-card.featured { grid-column: span 2; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .social-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .tech-grid { grid-template-columns: repeat(3, 1fr); }
+    .masonry-grid { columns: 2; }
+    .media-grid { grid-template-columns: 1fr 1fr; }
+    .future-grid { grid-template-columns: 1fr 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    nav { padding: 0 1rem; }
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu { display: block; }
+    section { padding: 5rem 1.25rem; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .project-card.featured { grid-column: span 1; }
+    .social-grid { grid-template-columns: 1fr 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+    .masonry-grid { columns: 1; }
+    .values-grid { grid-template-columns: 1fr; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    .media-grid { grid-template-columns: 1fr; }
+    .future-grid { grid-template-columns: 1fr; }
+    .tech-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* GLASS */
+  .glass {
+    background: rgba(21,21,21,0.7);
+    backdrop-filter: blur(12px);
+  }
+
+  /* Separator */
+  .sep {
+    height: 1px; background: var(--border);
+    margin: 3rem 0;
+  }
 </style>
 </head>
 <body>
 
-<div class="container">
-
-<!-- slide 1 -->
-<div id="slide1">
-
-<img class="slide-img" src="https://github.com/vidhansharmaofficial-debug/forsehajdidi/blob/83a44c07f7220e16063c692e1400a0aebbc6d09a/7efe876396837dbd57560677934d9f1e.jpg">
-
-<h1>
-To that one person I never want to lose ❤️<br>
-Meri pyaari behan aka mera chuha aka Sehaj didi❤️
-</h1>
-
-<div class="envelope" onclick="openLetter()">💌 </div>
-    <div><p>PRESS THE ENVELOPE</p></div>
-<div></div>
-
-
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-name">VIDHAN SHARMA</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+  </div>
 </div>
 
-<!-- slide 2 -->
-<div id="slide2">
-
-<img class="slide-img" src="didi1.png">
-
-<!-- polaroid memories -->
-<div class="polaroid mem1" onclick="zoom(this)">
-<img src="didi 4.png">
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#home" class="nav-logo">VS</a>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#photography">Photography</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Open menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#home" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#projects" onclick="closeMobile()">Projects</a>
+  <a href="#achievements" onclick="closeMobile()">Achievements</a>
+  <a href="#photography" onclick="closeMobile()">Photography</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
 </div>
 
-<div class="polaroid mem2" onclick="zoom(this)">
-<img src="didi2.png">
+<!-- HOME -->
+<section id="home">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-glow-1"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-content container">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        IIT Jammu Incubatee · Pragyaan Champion
+      </div>
+      <h1 class="hero-name">
+        Vidhan<br><span class="gradient-text">Sharma</span>
+      </h1>
+      <div class="hero-rotating">
+        <div class="hero-rotating-inner">
+          <span>Student Innovator</span>
+          <span>Inventor</span>
+          <span>Technology Builder</span>
+          <span>Entrepreneur</span>
+          <span>Photographer</span>
+        </div>
+      </div>
+      <p class="hero-desc">
+        Building technology that solves real-world problems through innovation, experimentation, and relentless curiosity.
+      </p>
+      <div class="btn-group">
+        <a href="#about" class="btn btn-primary">Explore Journey</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
+        <a href="#achievements" class="btn btn-ghost">Achievements</a>
+        <a href="#contact" class="btn btn-ghost">Contact</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="hero-portrait-ring"></div>
+      <div class="portrait-placeholder">
+        <div class="portrait-icon">👨‍💻</div>
+        <p>Portrait Photo</p>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="arrow"></div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="30">0</div>
+      <div class="stat-label">Projects Built</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="9">0</div>
+      <div class="stat-label">Awards Won</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="15">0</div>
+      <div class="stat-label">Competitions</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-number" data-target="6">0</div>
+      <div class="stat-label">National Events</div>
+    </div>
+  </div>
 </div>
 
-<div class="polaroid mem3" onclick="zoom(this)">
-<img src="https://github.com/vidhansharmaofficial-debug/forsehajdidi/blob/f256c788699d6072cc5189434c3226e12a867fc7/didi3.png">
+<!-- FEATURED SECTION (still on home) -->
+<div style="background:var(--bg); padding:5rem 2rem;">
+  <div class="container">
+    <div class="section-label">Highlights</div>
+    <h2 class="section-title">Built. Pitched. <span class="gradient-text">Won.</span></h2>
+    <p class="section-desc">Selected snapshots from a journey of building real things that solve real problems.</p>
+    <div class="featured-grid reveal">
+      <div class="featured-card">
+        <div class="card-tag gold">🏆 Featured Achievement</div>
+        <h3>Pragyaan STEAM Hackathon</h3>
+        <p>Defeated 28 teams across Jammu & Kashmir at IIT Jammu. Won 1st Place and a ₹15,000 cash prize with the Zap Shoe innovation. Now incubated at IIT Jammu for a full year.</p>
+        <div class="card-image-ph">🎯</div>
+      </div>
+      <div class="featured-card">
+        <div class="card-tag">🔋 Featured Project</div>
+        <h3>Zap Shoe</h3>
+        <p>A smart wearable innovation combining kinetic energy harvesting, safety features, and assistive technology — engineered to power IoT devices from the energy of every step you take.</p>
+        <div class="card-image-ph">👟</div>
+      </div>
+    </div>
+
+    <div class="updates-section">
+      <div class="section-label">Latest Updates</div>
+      <div class="update-item reveal">
+        <div class="update-dot"></div>
+        <div class="update-content">
+          <h4>IIT Jammu Incubation Program — Active</h4>
+          <p>Awarded a 1-year mentorship and incubation opportunity following the Pragyaan STEAM Hackathon win.</p>
+        </div>
+      </div>
+      <div class="update-item reveal">
+        <div class="update-dot"></div>
+        <div class="update-content">
+          <h4>Pitched directly to Union Minister Dr. Jitendra Singh</h4>
+          <p>Represented the school at the National Startup Festival in Jammu as part of a select 6-student delegation.</p>
+        </div>
+      </div>
+      <div class="update-item reveal">
+        <div class="update-dot"></div>
+        <div class="update-content">
+          <h4>National Runner-Up — CSIR-NAL Aerofest, Bengaluru</h4>
+          <p>Won 1st Prize in Aeromodelling and 1st Prize in Cultural Event at the national aerospace festival.</p>
+        </div>
+      </div>
+      <div class="update-item reveal">
+        <div class="update-dot"></div>
+        <div class="update-content">
+          <h4>More milestones coming</h4>
+          <p>Continuously building, experimenting, and competing. Stay tuned.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="polaroid mem4" onclick="zoom(this)">
-<img src="didi 4.png">
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-label">About</div>
+    <h2 class="section-title">The <span class="gradient-text">Builder</span> Behind the Ideas</h2>
+
+    <div class="about-grid">
+      <div class="about-story reveal">
+        <p>Vidhan Sharma is a <strong>student innovator, inventor, and technology builder</strong> from Jammu & Kashmir whose ideas consistently reach national stages — not because they're theoretical, but because they're built, demonstrated, and defended.</p>
+        <p>His philosophy is simple: <strong>don't just think about problems, build something</strong>. From the Zap Shoe — a kinetic energy harvesting wearable — to the Cliff Guard Car, every project starts with a real-world problem and ends with a functioning prototype.</p>
+        <p>Vidhan has represented his region at IIT Jammu, CSIR-NAL Bengaluru, CSIR-IIIM, and the National Startup Festival, pitching innovations directly to ministers, directors, and researchers.</p>
+        <p>Beyond hardware, he is a <strong>photographer, content creator, and entrepreneur-in-training</strong> — equally comfortable in a laboratory and behind a lens. His ambitions extend from patents and startups to UAV research and global competitions.</p>
+        <p>He is currently incubated at <strong>IIT Jammu</strong>, working on the next version of the Zap Shoe and exploring adjacent innovations in wearable technology and IoT.</p>
+        <div class="sep"></div>
+        <p><em>"Build first, perfect later. Real-world problems don't wait for the perfect solution."</em></p>
+      </div>
+
+      <div class="reveal">
+        <div class="values-grid" style="margin-bottom:2rem;">
+          <div class="value-card">
+            <div class="value-icon">🔬</div>
+            <h4>Build First</h4>
+            <p>Real prototypes over theoretical concepts. Always.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h4>Real Impact</h4>
+            <p>Every project solves a problem that matters to real people.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🚀</div>
+            <h4>Push Boundaries</h4>
+            <p>Compete at the highest levels. Set the bar, then raise it.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">📸</div>
+            <h4>Create Always</h4>
+            <p>Technology, photography, content — creation is the constant.</p>
+          </div>
+        </div>
+
+        <div class="section-label">Skills</div>
+        <div class="skills-grid">
+          <span class="skill-pill">Arduino</span>
+          <span class="skill-pill">IoT</span>
+          <span class="skill-pill">ESP32</span>
+          <span class="skill-pill">Sensors</span>
+          <span class="skill-pill">Electronics</span>
+          <span class="skill-pill">Hardware Prototyping</span>
+          <span class="skill-pill">Research</span>
+          <span class="skill-pill">Problem Solving</span>
+          <span class="skill-pill">Public Speaking</span>
+          <span class="skill-pill">Pitching</span>
+          <span class="skill-pill">Photography</span>
+          <span class="skill-pill">Content Creation</span>
+          <span class="skill-pill">Leadership</span>
+          <span class="skill-pill">Entrepreneurship</span>
+          <span class="skill-pill">UI/UX Concepts</span>
+          <span class="skill-pill">Aeromodelling</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep"></div>
+    <div class="section-label">Tech Stack</div>
+    <div class="tech-grid reveal">
+      <div class="tech-card"><div class="tech-icon">⚡</div><p>Arduino</p></div>
+      <div class="tech-card"><div class="tech-icon">📡</div><p>ESP32</p></div>
+      <div class="tech-card"><div class="tech-icon">🌐</div><p>IoT Platforms</p></div>
+      <div class="tech-card"><div class="tech-icon">🔌</div><p>Sensors</p></div>
+      <div class="tech-card"><div class="tech-icon">🔧</div><p>Electronics</p></div>
+      <div class="tech-card"><div class="tech-icon">🎨</div><p>Design Tools</p></div>
+      <div class="tech-card"><div class="tech-icon">📷</div><p>Photography</p></div>
+      <div class="tech-card"><div class="tech-icon">✏️</div><p>Content Tools</p></div>
+      <div class="tech-card" style="border-style:dashed;"><div class="tech-icon">➕</div><p>More Coming</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-label">Projects</div>
+    <h2 class="section-title">Built from <span class="gradient-text">Scratch</span></h2>
+    <p class="section-desc">Every project here is a real experiment — hardware, software, or a combination. Each one taught something.</p>
+    <div class="project-filters">
+      <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+      <button class="filter-btn" onclick="filterProjects('featured', this)">Featured</button>
+      <button class="filter-btn" onclick="filterProjects('wearable', this)">Wearable</button>
+      <button class="filter-btn" onclick="filterProjects('iot', this)">IoT</button>
+      <button class="filter-btn" onclick="filterProjects('ai', this)">AI & Software</button>
+      <button class="filter-btn" onclick="filterProjects('experimental', this)">Experimental</button>
+    </div>
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card featured reveal" data-cat="featured">
+        <div class="project-img" style="height:220px;">👟</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">Featured</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>Zap Shoe</h3>
+          <p>Smart wearable innovation combining kinetic energy harvesting with safety and assistive technology. Generates electricity from footsteps to power IoT devices. Winner of the Pragyaan STEAM Hackathon at IIT Jammu.</p>
+          <div class="project-tags">
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">Piezoelectric</span>
+            <span class="project-tag">IoT</span>
+            <span class="project-tag">Energy Harvesting</span>
+            <span class="project-tag">Wearable</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="featured">
+        <div class="project-img">🚗</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">Featured</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>Cliff Guard Car</h3>
+          <p>Automotive safety innovation designed to detect cliff edges and prevent cliff-related accidents through real-time sensor alerting.</p>
+          <div class="project-tags">
+            <span class="project-tag">Sensors</span>
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">Safety</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="wearable">
+        <div class="project-img">⚡</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Wearable</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>Smart Energy Footwear</h3>
+          <p>Energy harvesting shoe concept expanded into a full wearable platform.</p>
+          <div class="project-tags"><span class="project-tag">Energy</span><span class="project-tag">Wearable</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="wearable">
+        <div class="project-img">🌐</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Wearable</span>
+            <span class="status-badge concept">◆ Concept</span>
+          </div>
+          <h3>Wearable Translation Band</h3>
+          <p>Real-time translation wearable for breaking language barriers in conversation.</p>
+          <div class="project-tags"><span class="project-tag">ESP32</span><span class="project-tag">Translation</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="wearable">
+        <div class="project-img">🆘</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Wearable</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>Wearable Safety Tracker</h3>
+          <p>Personal safety wearable with GPS and emergency alert functionality.</p>
+          <div class="project-tags"><span class="project-tag">GPS</span><span class="project-tag">IoT</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="wearable">
+        <div class="project-img">❤️</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Wearable</span>
+            <span class="status-badge experimental">◈ Exp.</span>
+          </div>
+          <h3>Mini Health Tracker</h3>
+          <p>Compact health monitoring device tracking vital signs on a low-power platform.</p>
+          <div class="project-tags"><span class="project-tag">Biometrics</span><span class="project-tag">Arduino</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="ai">
+        <div class="project-img">🤖</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">AI</span>
+            <span class="status-badge experimental">◈ Exp.</span>
+          </div>
+          <h3>Tiny AI Chatbot Prototype</h3>
+          <p>Minimal AI chatbot running on constrained hardware — exploring edge AI.</p>
+          <div class="project-tags"><span class="project-tag">AI</span><span class="project-tag">ESP32</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="ai">
+        <div class="project-img">📈</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">AI</span>
+            <span class="status-badge concept">◆ Concept</span>
+          </div>
+          <h3>Viral Reel Analyzer</h3>
+          <p>Software tool that analyzes content patterns to predict virality on short-form platforms.</p>
+          <div class="project-tags"><span class="project-tag">Analytics</span><span class="project-tag">Python</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="iot">
+        <div class="project-img">📡</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">IoT</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>IoT Sensor Hub</h3>
+          <p>Centralized IoT data collection and processing hub for environmental sensing.</p>
+          <div class="project-tags"><span class="project-tag">ESP32</span><span class="project-tag">Sensors</span><span class="project-tag">IoT</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="iot">
+        <div class="project-img">🚪</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">IoT</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>DIY Smart Door</h3>
+          <p>Automated door lock system with remote access and notification capabilities.</p>
+          <div class="project-tags"><span class="project-tag">Arduino</span><span class="project-tag">Automation</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="iot">
+        <div class="project-img">💡</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">IoT</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>DIY Smart Lamp</h3>
+          <p>Voice and app-controlled smart lighting system built from scratch.</p>
+          <div class="project-tags"><span class="project-tag">IoT</span><span class="project-tag">ESP32</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="iot">
+        <div class="project-img">🚦</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag">IoT</span>
+            <span class="status-badge built">● Built</span>
+          </div>
+          <h3>Road Safety Sensor Module</h3>
+          <p>Sensor system designed to improve road safety through obstacle and speed detection.</p>
+          <div class="project-tags"><span class="project-tag">Sensors</span><span class="project-tag">Safety</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="experimental">
+        <div class="project-img">🧤</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Experimental</span>
+            <span class="status-badge experimental">◈ Exp.</span>
+          </div>
+          <h3>Smart Glove Prototype</h3>
+          <p>Gesture-controlled glove that translates hand movements into digital commands.</p>
+          <div class="project-tags"><span class="project-tag">Flex Sensors</span><span class="project-tag">Arduino</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="experimental">
+        <div class="project-img">🔋</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Experimental</span>
+            <span class="status-badge concept">◆ Concept</span>
+          </div>
+          <h3>Self-Charging Power Bank</h3>
+          <p>Power bank concept integrating multiple ambient energy harvesting methods.</p>
+          <div class="project-tags"><span class="project-tag">Energy</span><span class="project-tag">Concept</span></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-cat="experimental">
+        <div class="project-img">🔴</div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span class="card-tag purple">Experimental</span>
+            <span class="status-badge experimental">◈ Exp.</span>
+          </div>
+          <h3>Emergency SOS Sensor</h3>
+          <p>Compact emergency alert device with one-press SOS and location broadcasting.</p>
+          <div class="project-tags"><span class="project-tag">GPS</span><span class="project-tag">Alert</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" style="background:var(--bg2);">
+  <div class="container">
+    <div class="section-label">Achievements</div>
+    <h2 class="section-title">National Stages. <span class="gradient-text">Real Results.</span></h2>
+    <p class="section-desc">Not participation certificates — actual wins, pitches to ministers, and incubation at IIT Jammu.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>Pragyaan STEAM Hackathon</h3><div style="color:var(--text3);font-size:0.75rem;">IIT Jammu</div></div>
+            </div>
+            <span class="ach-badge gold">1st Place</span>
+          </div>
+          <p>Defeated 28 teams across Jammu & Kashmir. Won 1st Place with the Zap Shoe innovation. Followed by a 1-year mentorship and incubation opportunity at IIT Jammu.</p>
+          <div class="ach-prize">💰 ₹15,000 Cash Prize</div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>National Science Day</h3><div style="color:var(--text3);font-size:0.75rem;">CSIR-IIIM Jammu · 2025</div></div>
+            </div>
+            <span class="ach-badge">3rd Prize</span>
+          </div>
+          <p>Won 3rd Prize in the Scientific Models Competition for the Zap Shoe at the national science day event hosted by CSIR-IIIM Jammu, with classmate Aadhvik Ashish assisting during scientific Q&A rounds.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>CSIR-NAL Aerofest</h3><div style="color:var(--text3);font-size:0.75rem;">Bengaluru · National</div></div>
+            </div>
+            <span class="ach-badge national">National Runner-Up</span>
+          </div>
+          <p>National Runner-Up Trophy. Won 1st Prize in Aeromodelling and 1st Prize in Cultural Event at the national aerospace festival hosted by CSIR-NAL Bengaluru.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>National Startup Festival</h3><div style="color:var(--text3);font-size:0.75rem;">Jammu</div></div>
+            </div>
+            <span class="ach-badge national">National</span>
+          </div>
+          <p>Represented the school in a select six-student delegation and personally pitched the Zap Shoe directly to Dr. Jitendra Singh, Hon'ble Union Minister of State for Science and Technology.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>Technofest 2025</h3><div style="color:var(--text3);font-size:0.75rem;">Burhanpur, Madhya Pradesh</div></div>
+            </div>
+            <span class="ach-badge national">Out-of-State</span>
+          </div>
+          <p>Selected as sole creator to travel out of state and showcase the flagship hardware innovation, the Zap Shoe, with classmate Dakshesh Sharma assisting in the presentation.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>Divisional Level ATL Showcase</h3><div style="color:var(--text3);font-size:0.75rem;">Late 2024</div></div>
+            </div>
+            <span class="ach-badge">Divisional</span>
+          </div>
+          <p>Showcased the solo-engineered Cliff Guard Car prototype and pitched its mechanics directly to Mr. Ashok Kumar Sharma, Director of School Education, Jammu.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🏆</div>
+              <div><h3>CSIR-NAL Jigyasa Educational Tour</h3><div style="color:var(--text3);font-size:0.75rem;">Bengaluru</div></div>
+            </div>
+            <span class="ach-badge national">Elite Program</span>
+          </div>
+          <p>Selected for an elite aerospace research program at CSIR-NAL Bengaluru and delivered a technical presentation on UAVs.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="achievement-card">
+          <div class="ach-header">
+            <div style="display:flex;align-items:center;gap:0.75rem;">
+              <div class="ach-trophy">🥇</div>
+              <div><h3>State 1st Rank — Abacus Competition</h3><div style="color:var(--text3);font-size:0.75rem;">State Level</div></div>
+            </div>
+            <span class="ach-badge gold">State 1st</span>
+          </div>
+          <p>Achieved state-level first position in the Abacus Competition, demonstrating exceptional mathematical aptitude.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="institutions-section reveal">
+      <div class="section-label">Institutions & Organizations</div>
+      <div class="inst-grid">
+        <div class="inst-card">🏛️ IIT Jammu</div>
+        <div class="inst-card">🔬 CSIR</div>
+        <div class="inst-card">🧪 CSIR-IIIM</div>
+        <div class="inst-card">✈️ CSIR-NAL</div>
+        <div class="inst-card">🛠️ ATL</div>
+        <div class="inst-card">🚀 Pragyaan</div>
+        <div class="inst-card">💡 Technofest</div>
+        <div class="inst-card">🌐 National Startup Festival</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOGRAPHY -->
+<section id="photography" style="background:var(--bg);">
+  <div class="container">
+    <div class="section-label">Photography</div>
+    <h2 class="section-title">Through the <span class="gradient-text">Lens</span></h2>
+    <p class="section-desc">Photography is the other side of the build mindset — observation, patience, and the pursuit of the perfect frame.</p>
+
+    <div class="photo-cats">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Street</button>
+      <button class="filter-btn">Nature</button>
+      <button class="filter-btn">Architecture</button>
+      <button class="filter-btn">Creative</button>
+      <button class="filter-btn">Events</button>
+      <button class="filter-btn">Travel</button>
+    </div>
+
+    <div class="masonry-grid reveal">
+      <div class="photo-item"><div class="photo-ph" style="height:240px;"><div class="ph-icon">🌆</div><span>Street Photography</span></div><div class="photo-overlay"><span>Street · Jammu</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:180px;"><div class="ph-icon">🌿</div><span>Nature Photography</span></div><div class="photo-overlay"><span>Nature · Himachal</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:300px;"><div class="ph-icon">🏛️</div><span>Architecture</span></div><div class="photo-overlay"><span>Architecture · Bengaluru</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:200px;"><div class="ph-icon">✨</div><span>Creative Photography</span></div><div class="photo-overlay"><span>Creative · Experimental</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:260px;"><div class="ph-icon">🌄</div><span>Travel Photography</span></div><div class="photo-overlay"><span>Travel · Kashmir</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:180px;"><div class="ph-icon">🎯</div><span>Event Photography</span></div><div class="photo-overlay"><span>Events · Hackathon</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:220px;"><div class="ph-icon">🌇</div><span>Golden Hour</span></div><div class="photo-overlay"><span>Landscape · Sunset</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:160px;"><div class="ph-icon">🔭</div><span>Experimental</span></div><div class="photo-overlay"><span>Experimental · Abstract</span></div></div>
+      <div class="photo-item"><div class="photo-ph" style="height:280px;"><div class="ph-icon">❄️</div><span>Winter Frame</span></div><div class="photo-overlay"><span>Nature · Winter</span></div></div>
+    </div>
+
+    <!-- MEDIA & RECOGNITION -->
+    <div class="media-section">
+      <div class="section-label">Media & Recognition</div>
+      <h2 class="section-title" style="font-size:1.6rem;">Press & <span class="gradient-text">Features</span></h2>
+      <div class="media-grid reveal">
+        <div class="media-card">
+          <div class="media-icon">📰</div>
+          <h3>News Coverage</h3>
+          <p>Coverage from regional and national media for hackathon wins and technology achievements. Placeholder for future articles.</p>
+        </div>
+        <div class="media-card">
+          <div class="media-icon">🎙️</div>
+          <h3>Interviews</h3>
+          <p>Future space for video and written interviews with innovation, education, and technology media.</p>
+        </div>
+        <div class="media-card">
+          <div class="media-icon">📋</div>
+          <h3>Research Mentions</h3>
+          <p>Documentation and publications from CSIR research programs and IIT Jammu incubation work.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS -->
+    <div class="testimonials-section">
+      <div class="section-label">Testimonials</div>
+      <div class="testimonials-grid reveal">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Vidhan demonstrated exceptional problem-solving ability and the rare capacity to communicate complex engineering ideas with clarity at a national level."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👨‍🏫</div>
+            <div class="author-info"><h4>Mentor · IIT Jammu</h4><p>Incubation Program</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"The Zap Shoe shows genuine innovation thinking — not just a school project, but a real attempt at solving an energy problem from the ground up."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🧑‍⚖️</div>
+            <div class="author-info"><h4>Judge · Pragyaan STEAM Hackathon</h4><p>IIT Jammu</p></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">"Vidhan stood out among all student presenters — his ability to defend the science behind his prototype under rigorous Q&A was impressive."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🔬</div>
+            <div class="author-info"><h4>Scientist · CSIR-IIIM</h4><p>National Science Day</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="social-section">
+      <div class="section-label">Social Presence</div>
+      <div class="social-grid reveal">
+        <a href="https://x.com/EditswithVidhan" class="social-card" target="_blank" rel="noopener" style="border-color:rgba(29,161,242,0.15);">
+          <div class="social-icon">𝕏</div>
+          <div class="social-name">X (Twitter)</div>
+          <div class="social-handle">@EditswithVidhan</div>
+          <div class="social-metric">Growing · Tech & Innovation</div>
+        </a>
+        <a href="https://www.linkedin.com/in/vidhan-sharma-a676b0336/" class="social-card" target="_blank" rel="noopener" style="border-color:rgba(10,102,194,0.15);">
+          <div class="social-icon">💼</div>
+          <div class="social-name">LinkedIn</div>
+          <div class="social-handle">Vidhan Sharma</div>
+          <div class="social-metric">Professional Network</div>
+        </a>
+        <a href="https://www.instagram.com/thatguyvibe/" class="social-card" target="_blank" rel="noopener" style="border-color:rgba(228,64,95,0.15);">
+          <div class="social-icon">📸</div>
+          <div class="social-name">Instagram</div>
+          <div class="social-handle">@thatguyvibe</div>
+          <div class="social-metric">Photography & Creative</div>
+        </a>
+        <a href="https://www.youtube.com/@Vidhansharma1404" class="social-card" target="_blank" rel="noopener" style="border-color:rgba(255,0,0,0.12);">
+          <div class="social-icon">▶️</div>
+          <div class="social-name">YouTube</div>
+          <div class="social-handle">@Vidhansharma1404</div>
+          <div class="social-metric">Tech & Innovation Content</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE -->
+<div class="future-section">
+  <div class="container">
+    <div class="section-label">What's Next?</div>
+    <h2 class="section-title">The <span class="gradient-text">Roadmap</span></h2>
+    <p class="section-desc">The current wins are just the beginning. Here's what's being planned, built, and dreamed about.</p>
+    <div class="future-grid reveal">
+      <div class="future-card">
+        <div class="future-icon">🏢</div>
+        <h3>Startup Ventures</h3>
+        <p>Formalizing the Zap Shoe into a company during the IIT Jammu incubation period. Targeting product launch and early customers.</p>
+        <span class="coming-soon">In Progress</span>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">📜</div>
+        <h3>Patents</h3>
+        <p>Filing for utility patents on the Zap Shoe energy harvesting mechanism and the Cliff Guard Car safety system.</p>
+        <span class="coming-soon">Planning</span>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">🔭</div>
+        <h3>Research Publications</h3>
+        <p>Documenting experiments and innovations in formal research papers through mentorship at IIT Jammu.</p>
+        <span class="coming-soon">Coming Soon</span>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">🌍</div>
+        <h3>Global Competitions</h3>
+        <p>Representing India at international science and innovation competitions. Targeting global-stage exposure.</p>
+        <span class="coming-soon">Targeting 2025–26</span>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">🛸</div>
+        <h3>UAV & Aerospace</h3>
+        <p>Continuing research in unmanned aerial vehicles following the CSIR-NAL Jigyasa program and Aerofest success.</p>
+        <span class="coming-soon">Exploring</span>
+      </div>
+      <div class="future-card">
+        <div class="future-icon">⚡</div>
+        <h3>Next-Gen Products</h3>
+        <p>Expanding the wearable technology ecosystem beyond footwear — full-body energy harvesting, health monitoring, and assistive devices.</p>
+        <span class="coming-soon">Ideation</span>
+      </div>
+    </div>
+  </div>
 </div>
 
-<p id="letter"></p>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+    <p class="section-desc">For collaborations, media inquiries, mentorship opportunities, or just to say hello.</p>
 
-<div class="final-line" id="finalLine">
-Happy Valentine's Day ❤️
-</div>
+    <div class="contact-grid">
+      <div class="contact-form reveal">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option value="">Select a topic</option>
+            <option>Collaboration</option>
+            <option>Media / Interview</option>
+            <option>Mentorship</option>
+            <option>Investment / Funding</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your idea, opportunity, or question..."></textarea>
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="alert('Form submitted! Vidhan will respond shortly.')">Send Message →</button>
+      </div>
 
-</div>
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="ci-icon">📍</div>
+          <div class="ci-text">
+            <h4>Location</h4>
+            <p>Jammu & Kashmir, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">🏛️</div>
+          <div class="ci-text">
+            <h4>Incubated At</h4>
+            <p>IIT Jammu Innovation Center</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">𝕏</div>
+          <div class="ci-text">
+            <h4>Twitter / X</h4>
+            <p><a href="https://x.com/EditswithVidhan" style="color:var(--blue-bright);text-decoration:none;" target="_blank">@EditswithVidhan</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">💼</div>
+          <div class="ci-text">
+            <h4>LinkedIn</h4>
+            <p><a href="https://www.linkedin.com/in/vidhan-sharma-a676b0336/" style="color:var(--blue-bright);text-decoration:none;" target="_blank">Vidhan Sharma</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="ci-icon">📸</div>
+          <div class="ci-text">
+            <h4>Instagram</h4>
+            <p><a href="https://www.instagram.com/thatguyvibe/" style="color:var(--blue-bright);text-decoration:none;" target="_blank">@thatguyvibe</a></p>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <button class="btn btn-ghost" style="width:100%;justify-content:center;" onclick="alert('Resume download will be available soon.')">⬇ Download Resume</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</div>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" style="font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;background:var(--gradient-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">VIDHAN SHARMA</div>
+      <p>Student Innovator · Inventor · Entrepreneur · Technology Builder · Photographer</p>
+      <p>IIT Jammu Incubatee · Pragyaan STEAM Hackathon Champion</p>
+      <p class="footer-quote">"Turning ideas into impact through innovation."</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#photography">Photography</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://x.com/EditswithVidhan" target="_blank">X (Twitter)</a>
+      <a href="https://www.linkedin.com/in/vidhan-sharma-a676b0336/" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/thatguyvibe/" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com/@Vidhansharma1404" target="_blank">YouTube</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Vidhan Sharma. All rights reserved.</span>
+    <div class="footer-socials">
+      <a href="https://x.com/EditswithVidhan" target="_blank" title="X">𝕏</a>
+      <a href="https://www.linkedin.com/in/vidhan-sharma-a676b0336/" target="_blank" title="LinkedIn">💼</a>
+      <a href="https://www.instagram.com/thatguyvibe/" target="_blank" title="Instagram">📸</a>
+      <a href="https://www.youtube.com/@Vidhansharma1404" target="_blank" title="YouTube">▶️</a>
+    </div>
+  </div>
+</footer>
 
-<!-- zoom overlay -->
-<div id="zoomOverlay" onclick="closeZoom()">
-<img id="zoomImg">
-</div>
-
-<!-- music -->
-<audio id="music" loop>
-<source src="https://www2.cs.uic.edu/~i101/SoundFiles/CanoninD.mp3">
-</audio>
+<!-- BACK TO TOP -->
+<button id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
 
 <script>
+// LOADER
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 2000);
+});
 
-const text = `From the deepest point of my heart to meri pyaari didi❤️❤️
+// NAV SCROLL
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+  document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 400);
+  updateActiveNav();
+});
 
-I know I haven't always been perfect, i just always wonder ki how you didnt left me after i made so many mistakes. But I guess it is what it is, close relations like ours are never broken through small fights.
+// ACTIVE NAV
+function updateActiveNav() {
+  const sections = ['home', 'about', 'projects', 'achievements', 'photography', 'contact'];
+  const links = document.querySelectorAll('.nav-links a');
+  let current = '';
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && window.scrollY >= el.offsetTop - 100) current = id;
+  });
+  links.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
 
-But one thing is true I wanna apologize for whatever i did that hurt you.
+// HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+let menuOpen = false;
+hamburger.addEventListener('click', () => {
+  menuOpen = !menuOpen;
+  mobileMenu.classList.toggle('open', menuOpen);
+});
+hamburger.addEventListener('keydown', e => { if (e.key === 'Enter') hamburger.click(); });
+function closeMobile() {
+  menuOpen = false;
+  mobileMenu.classList.remove('open');
+}
 
-Meri pyaaari behen
+// PARTICLES
+(function() {
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  const count = 60;
 
-You are not just my sister.
-You are my safe place, my support, and my constant.
-You are something i would never want to lose, you are something that makes my day better than infinite many times.❤️❤️
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
 
-For me you are the single thing that is more expensive for me than anything else. You know i feel ki the word sister is not that grat that it can define you.
+  function randomParticle() {
+    return {
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.5 + 0.3,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      alpha: Math.random() * 0.4 + 0.1
+    };
+  }
 
-YOU WILL ALWAYS BE MY GREATEST GIFT OF MY LIFE.❤️❤️
+  for (let i = 0; i < count; i++) particles.push(randomParticle());
 
-I can afford anyting but to lose you.
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(96,165,250,${p.alpha})`;
+      ctx.fill();
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+    });
 
-I'm sorry for everything that hurt you.
-
-Just wanna say that nthing is more important for me than you, we have one year left together but i wanna make this last year as memorable as possible.
-
-You are the most precious Gem of my life and honestly you cant be compared with anyone else.❤️
-
-please never ever overthink for 2 kodi ke log you are just too above for them.❤️❤️
-
-And I promise, I will do better.
-
-that was it and also`;
-
-
-let i=0;
-
-function typeWriter(){
-    if(i<text.length){
-        document.getElementById("letter").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeWriter,25);
+    // Draw connections
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.strokeStyle = `rgba(96,165,250,${0.06 * (1 - dist / 120)})`;
+          ctx.lineWidth = 0.5;
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
     }
-    else{
-        document.getElementById("finalLine").style.opacity="1";
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// COUNTER
+function animateCounters() {
+  document.querySelectorAll('[data-target]').forEach(el => {
+    const target = +el.dataset.target;
+    const suffix = el.dataset.suffix || '+';
+    let current = 0;
+    const step = Math.ceil(target / 40);
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current + suffix;
+      if (current >= target) clearInterval(timer);
+    }, 40);
+  });
+}
+
+// SCROLL REVEAL + COUNTER TRIGGER
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
     }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const statsObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    animateCounters();
+    statsObserver.disconnect();
+  }
+}, { threshold: 0.3 });
+const statsEl = document.querySelector('.stats-section');
+if (statsEl) statsObserver.observe(statsEl);
+
+// PROJECT FILTER
+function filterProjects(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.project-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+      if (cat !== 'all' && card.classList.contains('featured') && card.dataset.cat !== cat) {
+        card.style.display = 'none';
+      }
+    } else {
+      card.style.display = 'none';
+    }
+    // Reset grid-column for featured when filtering
+    if (cat === 'all') {
+      card.style.gridColumn = '';
+    } else {
+      card.classList.remove('featured');
+    }
+  });
 }
 
-function openLetter(){
-
-    document.getElementById("music").play();
-
-    document.getElementById("slide1").style.display="none";
-
-    document.getElementById("slide2").style.display="block";
-
-    setTimeout(()=>{
-        document.getElementById("slide2").style.opacity="1";
-        typeWriter();
-    },300);
+// REDUCED MOTION
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('.reveal').forEach(el => {
+    el.style.opacity = 1;
+    el.style.transform = 'none';
+  });
 }
-
-/* zoom */
-function zoom(el){
-
-    const img=el.querySelector("img").src;
-
-    document.getElementById("zoomImg").src=img;
-
-    document.getElementById("zoomOverlay").classList.add("show");
-}
-
-function closeZoom(){
-    document.getElementById("zoomOverlay").classList.remove("show");
-}
-
-/* hearts */
-function createHeart(){
-
-    const heart=document.createElement("div");
-
-    heart.className="heart";
-
-    heart.innerHTML="❤️";
-
-    heart.style.left=Math.random()*100+"vw";
-
-    heart.style.fontSize=(Math.random()*20+10)+"px";
-
-    document.body.appendChild(heart);
-
-    setTimeout(()=>heart.remove(),5000);
-}
-
-setInterval(createHeart,300);
-
 </script>
-
 </body>
 </html>
